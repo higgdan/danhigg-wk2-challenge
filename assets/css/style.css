@@ -93,10 +93,20 @@ header a {
 
 .app {
     height: 200px;
-    flex: 1 0 200px;
+    flex: 1 1 200px;
     margin: 10px;
     text-align: center;
     vertical-align: middle;
+}
+.hero {
+    flex: 1 1 400px
+}
+
+.hero img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
 }
 
 /* Contact Me section */

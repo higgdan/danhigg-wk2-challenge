@@ -20,8 +20,39 @@ body {
     background-color: var(--col1);   
 }
 
+section {
+    height: 700px;
+    display: flex;
+    
+}
+
+.bg-green {
+    background: var(--col3);
+}
+.bg-orange {
+    background: var(--col4);
+}
+.bg-yellow {
+    background: var(--col5);
+}
+
+h2 {
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    padding: 10px;
+    position: sticky;
+}
+
+p {
+    color: white;
+    padding: 5%;
+    font-size: x-large;
+}
+
+
+/* heading and navigation */
 header {
-    height: 200px;  
+    height: 150px;  
 }
 
 header h1 {
@@ -39,32 +70,19 @@ header ul li {
 
 header a {
     text-decoration: none;
+    text-transform: uppercase;
     color: black;
     line-height: 1.5;
 }
 
-
-.bg-green {
-    background: var(--col3);
-}
-.bg-orange {
-    background: var(--col4);
-}
-.bg-yellow {
-    background: var(--col5);
+/* About Me section */
+#about-me img {
+    max-height: 80%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
-/* #about-me img {
-    max-height: 100%;
-    max-width: 100%;
-    display: inline-block;
-} */
-
-section {
-    height: 700px;
-    display: flex;
-}
-
+/* My Work section */
 .half {
     width: 50%;
     background-color: var(--col3);

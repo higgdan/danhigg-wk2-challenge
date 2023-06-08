@@ -1,37 +1,44 @@
 :root {
     --col1: #272727;
-    --col2: #747474;
+    --col2: #ffffff;
     --col3: #14a76c;
     --col4: #ff652f;
     --col5: #ffe400;
 
     --golden: 0.618033
-    }
+}
 
+
+/* setting the unversal properties for the page to follow */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
 }
 
 body {
-    background-color: var(--col1);   
+    background-color: var(--col1);
 }
 
 section {
-    height: 700px;
     display: flex;
-    
 }
 
+/* background for */
 .bg-green {
     background: var(--col3);
 }
+
 .bg-orange {
     background: var(--col4);
 }
+
 .bg-yellow {
     background: var(--col5);
 }
@@ -40,31 +47,27 @@ h2 {
     text-transform: uppercase;
     writing-mode: vertical-rl;
     padding: 10px;
-    position: sticky;
+    margin-right: 10px;
 }
 
 p {
-    color: white;
+    color: var(--col2);
     padding: 5%;
     font-size: x-large;
+    flex-wrap: wrap;
 }
 
 
 /* heading and navigation */
-header {
-    height: 150px;  
-}
-
 header h1 {
     font-size: 50px;
-    color: white;
+    color: var(--col2);
     padding: 10px;
 }
 
 header ul li {
     width: 33.33%;
     text-align: center;
-    list-style-type: none;
     float: left;
 }
 
@@ -77,45 +80,35 @@ header a {
 
 /* About Me section */
 #about-me img {
-    max-height: 80%;
-    margin-right: 5%;
-    margin-top: 5%;
+    max-height: 200px;
+    margin: 5%
 }
 
 /* My Work section */
-.half {
-    width: 50%;
-    background-color: var(--col3);
-}
-    
-.right {
-    background-color: var(--col5);
+.content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-#contact {
-    position: relative;
+.app {
+    height: 200px;
+    flex: 1 0 200px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-
-.fibbox {
-    height: calc(100% * var(--golden));
-    aspect-ratio: 1/1;
-    position: absolute;
-    right: 0;
-    background: var(--col4);
+/* Contact Me section */
+.details a {
+    font-size: x-large;
+    color: var(--col2);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-left: 10px;
 }
 
-.fibbox div {
-    width: calc(100% * var(--golden));
-    aspect-ratio: 1/1;
-    position: absolute;
-    background: var(--col4);
-    bottom: 0;
-    transform: translateY(100%) rotate(-90deg);
-    opacity: .8;
-
-    
-}
 @media screen and (max-width: 768px) {
     header ul li {
         width: 100%;
@@ -123,21 +116,3 @@ header a {
     }
 
 }
-
-
-/* .fibbox {
-    width: calc(100% * var(--fibb));
-    aspect-ratio: 1/1;
-    position: absolute;
-    background: var(--col4);
-}
-
-.fibbox div {
-    width: calc(100% * var(--fibb));
-    height: calc(100% * var(--fibb));
-    position: absolute;
-    background: var(--col4);
-    right: 0;
-    transform: translateX(100%) rotate(90deg);
-    opacity: .8;
-} */

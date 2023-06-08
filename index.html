@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,63 +8,65 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Daniel's Portfolio</title>
 </head>
+
 <body>
     <!-- Website Heading and Navigation -->
     <header>
         <h1>Daniel Higgins - Portfolio</h1>
         <ul>
             <li class="bg-green">
-                   <a href="#about-me"> About Me</a>
-             </li>
-            <li class="bg-orange">
-                 <a href="#my-work"> My Work</a>
-             </li>
-             <li  class="bg-yellow">
-                 <a href="#contact"> Contact Details</a>
+                <a href="#about-me"> About Me</a>
             </li>
-         </ul>
+            <li class="bg-orange">
+                <a href="#my-work"> My Work</a>
+            </li>
+            <li class="bg-yellow">
+                <a href="#contact"> Contact Details</a>
+            </li>
+            <!-- this line of code was inserted by my course instructor to fix the About Me section dissapearing when resizing-->
+            <li style="float: none; clear: both"></li> 
+        </ul>
     </header>
 
     <!-- About Me section -->
     <section id="about-me">
         <h2 class="bg-green">About Me</h2>
-        <p> Daniel is an aspiring coder that has built this portfolio to showcase his current understanding of the properties of HTML and CSS.</p>
-        <img src="./assets/images/danny.png" alt="An avatar of this portfolios creator.">
+        <p> Daniel is an aspiring coder that has built this portfolio to showcase his current understanding of the
+            properties of HTML and CSS.</p>
+        <img src="./assets/images/danny.png"
+            alt="An avatar of this portfolios creator, He wears a wide brimmed hat and had a tiny whit dog sitting on his.">
     </section>
-    
-    
+
+    <!-- My Work section -->
     <section id="my-work">
         <h2 class="bg-orange">My Work</h2>
-            <div class="half">dbfd</div>
-            <div class="half right">wegwdbffd</div>
-    </section>
-    
-    <section id="contact">
-        <h2 class="bg-yellow">Contact details</h2>
-        Github
-        Email
-
-        <div class="fibbox"> DIVS
-            <div> ALL
-                <div> THE
-                    <div> WAY
-                        <div> DOWN
-                            <div>
-                                <div>
-                                    <div>
-                                        <div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="content">
+            <div class="app bg-green">APP 1</div>
+            <div class="app bg-orange">APP 2</div>
+            <div class="app bg-yellow">APP 3</div>
+            <div class="app bg-green">APP 4</div>
+            <div class="app bg-orange">APP 5</div>
+            <div class="app bg-yellow">APP 6</div>
         </div>
     </section>
-    
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2 class="bg-yellow">Contact details</h2>
+        <ul class="details">
+            <li>
+                <a href="daniel@fakeaddress.com">Email : daniel @ fakeaddress.com</a>
+            </li>
+            <li>
+                <a href="https://github.com/higgdan">Github</a>
+            </li>
+            <li>
+                <a href="https://linkedin.com">Linkedin</a>
+            </li>
+        </ul>
+    </section>
+
     <footer></footer>
 </body>
+
 </html>

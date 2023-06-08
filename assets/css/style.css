@@ -1,0 +1,125 @@
+:root {
+    --col1: #272727;
+    --col2: #747474;
+    --col3: #14a76c;
+    --col4: #ff652f;
+    --col5: #ffe400;
+
+    --golden: 0.618033
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--col1);   
+}
+
+header {
+    height: 200px;  
+}
+
+header h1 {
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+}
+
+header ul li {
+    width: 33.33%;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.bg-green {
+    background: var(--col3);
+}
+.bg-orange {
+    background: var(--col4);
+}
+.bg-yellow {
+    background: var(--col5);
+}
+
+/* #about-me img {
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+} */
+
+section {
+    height: 700px;
+    display: flex;
+}
+
+.half {
+    width: 50%;
+    background-color: var(--col3);
+}
+    
+.right {
+    background-color: var(--col5);
+}
+
+#contact {
+    position: relative;
+}
+
+
+.fibbox {
+    height: calc(100% * var(--golden));
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    background: var(--col4);
+}
+
+.fibbox div {
+    width: calc(100% * var(--golden));
+    aspect-ratio: 1/1;
+    position: absolute;
+    background: var(--col4);
+    bottom: 0;
+    transform: translateY(100%) rotate(-90deg);
+    opacity: .8;
+
+    
+}
+@media screen and (max-width: 768px) {
+    header ul li {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+
+/* .fibbox {
+    width: calc(100% * var(--fibb));
+    aspect-ratio: 1/1;
+    position: absolute;
+    background: var(--col4);
+}
+
+.fibbox div {
+    width: calc(100% * var(--fibb));
+    height: calc(100% * var(--fibb));
+    position: absolute;
+    background: var(--col4);
+    right: 0;
+    transform: translateX(100%) rotate(90deg);
+    opacity: .8;
+} */
